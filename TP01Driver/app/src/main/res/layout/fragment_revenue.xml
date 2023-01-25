@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RevenueFragment">
+
+    <LinearLayout
+        android:gravity="center|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/developing_icon" />-->
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="열심히 개발중입니다."
+            android:textSize="20sp"
+            android:textColor="#262626"
+            android:fontFamily="@font/notosansbold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023년 상반기 업데이트 예정"
+            android:textColor="#80262626"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="150dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

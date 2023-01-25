@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.tp01driver.ui.HomeFragment"
+        android:label="홈"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.tp01driver.ui.BlankFragment"
+        android:label="지도"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.tp01driver.ui.ListFragment"
+        android:label="목록"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/navigation_revenue"
+        android:name="com.example.tp01driver.ui.RevenueFragment"
+        android:label="수익"
+        tools:layout="@layout/fragment_revenue" />
+    <fragment
+        android:id="@+id/navigation_my_menu"
+        android:name="com.example.tp01driver.ui.MyMenuFragment"
+        android:label="MY"
+        tools:layout="@layout/fragment_my_menu" />
+</navigation>

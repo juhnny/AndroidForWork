@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity"
+    android:background="#01B663">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="100dp">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:src="@drawable/login_logo"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="마당발 기사앱에 오신 것을 환영합니다."
+            android:fontFamily="@font/notosansregular"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="-30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:paddingHorizontal="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/notosansbold"
+                android:textSize="40sp"
+                android:textColor="@color/black"/>
+            
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_round_rect"
+                android:ems="10"
+                android:fontFamily="@font/notosansregular"
+                android:hint="이메일 아이디"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_round_rect"
+                android:ems="10"
+                android:fontFamily="@font/notosansregular"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/notosansregular"
+                android:text="로그인"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_keep_login"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_launcher_foreground"/>
+                <TextView
+                    android:id="@+id/tv_keep_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그인 상태 유지"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/icon_keep_login"
+                    />
+                <TextView
+                    android:id="@+id/tv_find_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 찾기"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
